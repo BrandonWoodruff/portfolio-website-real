@@ -1,3 +1,4 @@
+import { LinksFunction } from "@remix-run/node";
 import {
   Links,
   Meta,
@@ -5,6 +6,11 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import stylesheet from "~/tailwind.css?url";
+
+export let links: LinksFunction = () => {
+  return [{ rel: "stylesheet", href: stylesheet }];
+}
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -20,6 +26,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <ScrollRestoration />
         <Scripts />
       </body>
+      <footer>
+        <div className="bg-gray-800 text-white">
+          <p>© 2024 Brandon Woodruff</p>
+        </div>
+        </footer>
     </html>
   );
 }
