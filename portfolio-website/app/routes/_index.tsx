@@ -51,7 +51,7 @@ export default function Index() {
         <br/><br/>
         <h1 className="text-3xl font-bold underline">Brandon Woodruff</h1>
         <br/><br/>
-        <p id="summary-link" className="transition duration-150 ease-in-out text-2xl underline cursor-pointer" onClick={toggleSummary} onMouseOver={highlightSummary} onMouseOut={unHighlightSummary}>Summary</p>
+        <p id="summary-link" className="transition duration-150 ease-in-out text-2xl cursor-pointer" onClick={toggleSummary} onMouseOver={highlightSummary} onMouseOut={unHighlightSummary}>Summary</p>
         {summaryVisible && (
           <div id="summary-content" className="mx-auto max-w-4xl bg-white bg-opacity-50 rounded-lg text-2xl">
             Experienced IT professional with a focus on web applications and software development. Proficient in software development, adept at resolving diverse issues and delivering outstanding support in dynamic, fast-paced environments. Proficient in crafting and implementing solutions, monitoring systems, and facilitating changes. Specialized in leveraging software development skills to enhance operational efficiency and address complex challenges.
