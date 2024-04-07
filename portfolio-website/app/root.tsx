@@ -7,12 +7,16 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import stylesheet from "~/tailwind.css?url";
+import Header from "~/components/_header";
+import Footer from "~/components/_footer";
+import Background from "~/components/_background";
 
 export let links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: stylesheet }];
 }
 
 export function Layout({ children }: { children: React.ReactNode }) {
+
   return (
     <html lang="en">
       <head>
@@ -21,19 +25,23 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
+      < Background />
+        <Header />
       <body>
         {children}
         <ScrollRestoration />
         <Scripts />
       </body>
-      <footer>
-        <div className="bg-gray-800 text-white">
-          <p>© 2024 Brandon Woodruff</p>
-        </div>
-        </footer>
+      <Footer />
     </html>
   );
 }
+
+
+
+// create a footer function that will be used in the routes
+
+
 
 export default function App() {
   return <Outlet />;
