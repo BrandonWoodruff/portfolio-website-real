@@ -79,7 +79,8 @@ export default function Index() {
 
   return (
       
-      <div className="relative text-white text-center z-1">
+    <div className="relative text-white text-center z-1">
+        <Header />
         <br/><br/>
         <h1 className="text-3xl font-bold underline">Brandon Woodruff</h1>
         <br/><br/>
@@ -124,7 +125,7 @@ export default function Index() {
 
         <br /><br />
         <p id="experience" className="text-2xl cursor-pointer" onClick={toggleExperience} onMouseOver={highlightExperience} onMouseOut={unHighlightExperience}>Experience</p>
-    {experienceVisible && (<div id="experience-content" className="mx-auto max-w-4xl bg-white bg-opacity-50 rounded-lg text-2xl">
+    {experienceVisible && (<div id="experience-content" className="mx-auto max-w-4xl bg-white bg-opacity-50 rounded-lg text-2xl z-10">
                   <br></br>
                     <h3> PROJECT SOLAR – Orem, Utah</h3>
           <p>June 2021 to Current </p>
@@ -185,7 +186,10 @@ export default function Index() {
                         <li>Created Project Proposals for customers using CAD and Aurora.</li>
                     </ul>
     </div>
-        )}
+      )}
+        <br></br><br></br>
+      <Footer />
+      
       </div>
   );
 }

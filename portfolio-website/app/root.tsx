@@ -25,14 +25,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      < Background />
-        <Header />
       <body>
+        <Background />
         {children}
         <ScrollRestoration />
         <Scripts />
       </body>
-      <Footer />
     </html>
   );
 }
