@@ -140,4 +140,3 @@ function handleBrowserRequest(
   });
 }
 
-export { handleRequest as default } from "@netlify/remix-adapter";
