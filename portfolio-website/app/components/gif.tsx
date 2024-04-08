@@ -9,7 +9,7 @@ const Gif = () => {
   
   return (
     <div 
-      className=" top-50 left-50 h-1/4 w-auto z-10" 
+      className=" h-1/4 w-auto z-10" 
       onMouseEnter={() => setIsHovered(true)} // Set hover state to true on mouse enter
       onMouseLeave={() => setIsHovered(false)} // Set hover state to false on mouse leave
     >
@@ -17,7 +17,7 @@ const Gif = () => {
         <img
   src={isHovered ? '/video/logo.gif' : '/image/logo.jpg'}
   alt="Your GIF"
-  className="w-full h-full scale-50 object-cover transition-transform duration-500 hover:scale-100"
+  className="w-full h-full scale-50 object-cover transition-transform duration-500 hover:scale-50"
   style={{ maxHeight: '25%', maxWidth: '25%' }}
   onMouseEnter={() => setIsHovered(true)}
   onMouseLeave={() => setIsHovered(false)}
