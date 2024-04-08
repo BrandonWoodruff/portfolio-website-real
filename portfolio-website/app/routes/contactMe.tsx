@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { header } from '~/app/components/_header.tsx';
-import { footer } from '~/app/components/_footer.tsx';
+import { header } from '~/app/components/_header';
+import { footer } from '~/app/components/_footer';
 
 const ContactMe: React.FC = () => {
   const [name, setName] = useState('');
