@@ -14,6 +14,7 @@ import { renderToPipeableStream } from "react-dom/server";
 
 const ABORT_DELAY = 5_000;
 
+
 export default function handleRequest(
   request: Request,
   responseStatusCode: number,
@@ -138,3 +139,5 @@ function handleBrowserRequest(
     setTimeout(abort, ABORT_DELAY);
   });
 }
+
+export { handleRequest as default } from "@netlify/remix-adapter";

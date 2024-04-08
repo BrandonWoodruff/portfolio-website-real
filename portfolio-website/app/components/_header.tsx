@@ -1,6 +1,6 @@
 import Gif from "~/components/gif";
-import pkg from '@heroicons/react/outline';
-const { ExternalLinkIcon } = pkg;
+import { ExternalLinkIcon } from '@heroicons/react/outline';
+
 
 export function Header() {
   return (
