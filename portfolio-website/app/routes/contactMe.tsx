@@ -9,7 +9,6 @@ const ContactMe: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log('Form submitted!');
     console.log('Name:', name);
     console.log('Email:', email);
